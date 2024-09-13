@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { CiDeliveryTruck, CiShop, CiViewList } from 'react-icons/ci'
 import { FaCartPlus, FaRegUser } from 'react-icons/fa'
@@ -5,37 +6,6 @@ import { IoMdHome } from 'react-icons/io'
 import { IoCartOutline } from 'react-icons/io5'
 import { MdOutlineStoreMallDirectory } from 'react-icons/md'
 import { RiHome3Line } from 'react-icons/ri'
-const navilanks=[
-    {
-        title:'Home',
-        path:"Home"
-    }
-    ,
-    {
-        title:'Shops',
-        path:"Shops"
-    }
-    ,
-    {
-        title:'Categories',
-        path:"Categories"
-    }
-    ,
-    {
-        title:'Orders',
-        path:"Orders"
-    }
-    ,
-    {
-        title:'My Store',
-        path:"MyStore"
-    }
-    ,
-    {
-        title:'Delivery Address',
-        path:"DeliveryAddres"
-    }
-]
 const Naver = () => {
   return (
     <div className='bg-[#F5F5DC] h-32 text-[#2F4F4F] fixed  w-full shadow-lg z-10'>
@@ -93,7 +63,7 @@ const Naver = () => {
       <button className='bg-[#003366] btn text-white  rounded-l-none'>Search</button>
     </div>
     <ul className='hidden lg:flex gap-8 font-bold items-center'>
-<li className='flex items-center gap-1'><RiHome3Line className='text-2xl' /> Home</li>
+<Link href={'/'}><li className='flex items-center gap-1'><RiHome3Line className='text-2xl' /> Home</li></Link>
 <li  className='flex items-center gap-1'> <CiShop className='text-2xl' />
 Shops
 </li>
