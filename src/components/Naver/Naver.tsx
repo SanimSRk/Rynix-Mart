@@ -6,12 +6,14 @@ import { IoMdHome } from 'react-icons/io'
 import { IoCartOutline } from 'react-icons/io5'
 import { MdOutlineStoreMallDirectory } from 'react-icons/md'
 import { RiHome3Line } from 'react-icons/ri'
+import logos from '../../image/online-shopping-removebg-preview (1).png'
+import Image from 'next/image'
 const Naver = () => {
   return (
     <div className='bg-[#F5F5DC] h-32 text-[#2F4F4F] fixed  w-full shadow-lg z-10'>
       <div className="navbar flex items-center justify-between max-w-screen-xl mx-auto">
   <div className="">
-    <a className="btn btn-ghost text-xl"> Rynix Mart</a>
+ <Link href={'/'} className='flex items-center '><Image className='w-[70px] ' width={200} height={200}  src={logos} alt=""  /> <span className='text-xl font-bold'> Rynix Mart</span> </Link>
   </div>
   <div>
   <div className=" hidden lg:flex">
