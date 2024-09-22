@@ -1,6 +1,8 @@
 import React from 'react'
 import signupImage from '../../image/shoppi.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
+import { FcGoogle } from 'react-icons/fc'
 export default function page() {
   return (
     <div>
@@ -30,9 +32,11 @@ export default function page() {
         <div className="form-control mt-5">
           <button className="btn text-white bg-[#FF7043]">Login</button>
         </div>
-        <p className='text-center font-bold'>Don’t have an account? <span>Sign up now</span></p>
-        <div className="divider">Default</div>
+        <p className='text-center font-bold'>Don’t have an account? <Link href={'/sign-up'}><span className='text-blue-500'>Sign up now</span></Link></p>
       </form>
+      <div className='text-center grid justify-center mb-4 '>
+      <FcGoogle className='text-4xl rounded-full' />
+      </div>
     </div>
 
   </div>

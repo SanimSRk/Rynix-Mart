@@ -27,10 +27,12 @@ const Naver = () => {
     <FaCartPlus className='text-3xl' />
     </div>
     <div>
-    <button className='btn-ghost btn font-bold'>
+   <Link href={'/login'}>
+   <button className='btn-ghost btn font-bold'>
     <FaRegUser className='text-3xl ' />
         Sign in
     </button>
+   </Link>
     </div>
     <div className="dropdown dropdown-end">
   
